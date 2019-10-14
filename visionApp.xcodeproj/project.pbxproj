@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		B5C47FC0235285E4005104DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C47FBF235285E4005104DF /* AppDelegate.swift */; };
 		B5C47FC2235285E4005104DF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C47FC1235285E4005104DF /* SceneDelegate.swift */; };
-		B5C47FC4235285E4005104DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C47FC3235285E4005104DF /* ViewController.swift */; };
+		B5C47FC4235285E4005104DF /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C47FC3235285E4005104DF /* CameraVC.swift */; };
 		B5C47FC7235285E4005104DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5C47FC5235285E4005104DF /* Main.storyboard */; };
 		B5C47FC9235285E9005104DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5C47FC8235285E9005104DF /* Assets.xcassets */; };
 		B5C47FCC235285E9005104DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5C47FCA235285E9005104DF /* LaunchScreen.storyboard */; };
+		B5C47FD723528CF5005104DF /* RoundedShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C47FD623528CF5005104DF /* RoundedShadowView.swift */; };
+		B5C47FD923529053005104DF /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C47FD823529053005104DF /* RoundedButton.swift */; };
+		B5C47FDB235290B6005104DF /* RoundedShadowImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C47FDA235290B6005104DF /* RoundedShadowImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B5C47FBC235285E4005104DF /* visionApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = visionApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5C47FBF235285E4005104DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5C47FC1235285E4005104DF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B5C47FC3235285E4005104DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B5C47FC3235285E4005104DF /* CameraVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraVC.swift; sourceTree = "<group>"; };
 		B5C47FC6235285E4005104DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B5C47FC8235285E9005104DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5C47FCB235285E9005104DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B5C47FCD235285E9005104DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5C47FD623528CF5005104DF /* RoundedShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShadowView.swift; sourceTree = "<group>"; };
+		B5C47FD823529053005104DF /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		B5C47FDA235290B6005104DF /* RoundedShadowImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShadowImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,42 @@
 		B5C47FBE235285E4005104DF /* visionApp */ = {
 			isa = PBXGroup;
 			children = (
+				B5C47FD523528736005104DF /* Resourses */,
+				B5C47FD42352872D005104DF /* View */,
+				B5C47FD323528717005104DF /* Controller */,
 				B5C47FBF235285E4005104DF /* AppDelegate.swift */,
 				B5C47FC1235285E4005104DF /* SceneDelegate.swift */,
-				B5C47FC3235285E4005104DF /* ViewController.swift */,
 				B5C47FC5235285E4005104DF /* Main.storyboard */,
 				B5C47FC8235285E9005104DF /* Assets.xcassets */,
 				B5C47FCA235285E9005104DF /* LaunchScreen.storyboard */,
 				B5C47FCD235285E9005104DF /* Info.plist */,
 			);
 			path = visionApp;
+			sourceTree = "<group>";
+		};
+		B5C47FD323528717005104DF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B5C47FC3235285E4005104DF /* CameraVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B5C47FD42352872D005104DF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B5C47FD623528CF5005104DF /* RoundedShadowView.swift */,
+				B5C47FD823529053005104DF /* RoundedButton.swift */,
+				B5C47FDA235290B6005104DF /* RoundedShadowImageView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B5C47FD523528736005104DF /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resourses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +171,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5C47FC4235285E4005104DF /* ViewController.swift in Sources */,
+				B5C47FD723528CF5005104DF /* RoundedShadowView.swift in Sources */,
+				B5C47FD923529053005104DF /* RoundedButton.swift in Sources */,
+				B5C47FC4235285E4005104DF /* CameraVC.swift in Sources */,
 				B5C47FC0235285E4005104DF /* AppDelegate.swift in Sources */,
+				B5C47FDB235290B6005104DF /* RoundedShadowImageView.swift in Sources */,
 				B5C47FC2235285E4005104DF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,6 +323,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 83G4KB5W5L;
 				INFOPLIST_FILE = visionApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,6 +342,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 83G4KB5W5L;
 				INFOPLIST_FILE = visionApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
